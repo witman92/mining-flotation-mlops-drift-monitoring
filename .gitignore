@@ -1,0 +1,10 @@
+data_flotacion/*.csv
+telemetria.csv
+drift_log.csv
+performance_log.csv
+ALERTA_DRIFT.log
+models_flotacion/*candidato*
+__pycache__/
+.venv/
+.env
+.ipynb_checkpoints/

@@ -1,0 +1,43 @@
+{
+  "modelo_campeon": "histgb",
+  "features_numericas": [
+    "hour",
+    "pct_iron_feed",
+    "pct_silica_feed",
+    "starch_flow",
+    "amina_flow",
+    "ore_pulp_flow",
+    "ore_pulp_ph",
+    "ore_pulp_density",
+    "flotation_column_01_level",
+    "flotation_column_02_level",
+    "flotation_column_03_level",
+    "flotation_column_01_air_flow",
+    "flotation_column_02_air_flow",
+    "flotation_column_03_air_flow"
+  ],
+  "features_categoricas": [
+    "dow"
+  ],
+  "target": "pct_silica_concentrate",
+  "n_train": 149,
+  "n_test": 60,
+  "resultados": {
+    "linreg": {
+      "cv_mae_mean": 1.307,
+      "cv_mae_std": 0.373,
+      "test_mae": 13.039,
+      "test_rmse": 13.133,
+      "test_r2": -125.773
+    },
+    "histgb": {
+      "cv_mae_mean": 1.194,
+      "cv_mae_std": 0.306,
+      "test_mae": 1.309,
+      "test_rmse": 1.496,
+      "test_r2": -0.645
+    }
+  },
+  "baseline_global_mae": 0.966,
+  "baseline_agrupado_mae": 1.115
+}
